@@ -136,3 +136,31 @@ a {
     letter-spacing: 0.5px;
     text-align: left;
 }
+
+/*style for the questions page*/
+#quiz-content {
+    background: #2A708C;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+/*create transparent question box*/
+#question-container {
+    position: relative;
+    width: 800px;
+    height: 500px;
+    background: rgba(0,0,0,.3);
+    font-family: 'Lato', sans-serif;
+    border-radius: 20px;
+    color: whitesmoke;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+#quiz-timer {
+    margin: 20px 10px;
+}
