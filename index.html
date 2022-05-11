@@ -12,7 +12,19 @@
         <div id="box-container">
             <h1 id="main-heading">Premier League Trivia</h1>
             <h3>Give it a shot!</h3>
-            <button id="start-button">Start Quiz</button>
+            <button class="main-buttons" id="instructions-btn" onclick="openInstructions()">Intructions</button>
+            <div class="instructions-box" id="quiz-instructions">
+                <h2>Instructions</h2>
+                <ul>
+                    <li>You will have 15secs for each question.</li>
+                    <li>Once you select your answer it can be changed.</li>
+                    <li>You can't select any option once the time go off.</li>
+                    <li>You can't exit from the quiz while you're playing.</li>
+                    <li>You will get the points on the basis of correct answer.</li>
+                </ul>
+                <button type="button" onclick="closeInstructions()">OK</button>
+            </div>
+            <button class="main-buttons" id="start-button">Start Quiz</button>
         </div>
 
     </div>

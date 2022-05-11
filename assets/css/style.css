@@ -45,7 +45,7 @@
     transform: translateY(-40%);
 }
 
-#start-button {
+.main-buttons {
     border-radius: 25px;
     display: block;
     margin: 20px auto;
@@ -65,8 +65,56 @@
     outline: none;
 }
 
-#start-button:hover {
+.main-buttons:hover {
     box-shadow: inset 180px 0 0 0 #082040;
     color: whitesmoke;
     cursor: pointer;
+}
+
+.instructions-box {
+    width: 400px;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    height: 300px;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-box {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+.instructions-box h2{
+    text-transform: uppercase;
+    margin: 30px 0 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.instructions-box button {
+    margin-top: 10px;
+    width: 80%;
+    padding: 10px 0;
+    background: #178CA6;
+    border: 0;
+    outline: none;
+    font-size: 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.instructions-box li{
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    text-align: left;
 }
