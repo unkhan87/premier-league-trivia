@@ -11,3 +11,9 @@ function openInstructions(){
 function closeInstructions(){
     instructionsBox.classList.remove("open-box");
 }
+
+
+/**declaring all the variables*/
+const question = document.getElementById("league-questions");
+const options = document.getElementById(document.getElementByClassName("option"));
+const progressText = document.getElementById("progress-text");

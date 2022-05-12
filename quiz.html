@@ -14,10 +14,10 @@
         <!--div container to store the users score and progress bar-->
             <div id="top-display">
             <div class="top-display-item">
-                <p class="top-display-prefix">
+                <p class="top-display-prefix" id="score-text">
                     Score
                 </p>
-                <h1 id="user-score" class="score-text">
+                <h1 id="user-score" class="score-number">
                     0
                 </h1>
             </div>
@@ -26,16 +26,24 @@
                     Question
                 </p>
                 <div id="progressBar">
-                    <div class="progress-bar-full"></div>
+                    <div id="progressBarFull"></div>
                 </div>
             </div>
         </div>
-            <div id="league-question" class="questions">Questions</div>
-                <div id="options" class="options-box">
-                    <button class="option" value="option 1">Option 1</button>
-                    <button class="option" value="option 2">Option 2</button>
-                    <button class="option" value="option 3">Option 3</button>
-                    <button class="option" value="option 4">Option 4</button>
+            <p id="league-questions" class="questions">Question:</p>
+                <div id="options-container" class="options-box">
+                    <div class="option-text" data-number="1">
+                        <p>Option A</p>
+                    </div>
+                    <div class="option-text" data-number="2">
+                        <p>Option B</p>
+                    </div>
+                    <div class="option-text" data-number="3">
+                        <p>Option C</p>
+                    </div>
+                    <div class="option-text" data-number="4">
+                        <p>Option D</p>
+                    </div>
                 </div>
             <div class="controls">
                 <button id="previous-btn" class="previous-btn btn">Previous</button>

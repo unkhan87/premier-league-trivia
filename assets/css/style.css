@@ -164,3 +164,55 @@ a {
 #quiz-timer {
     margin: 20px 10px;
 }
+
+#top-display {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-display-item {
+    text-align: center;
+    margin: 20px 20px;
+}
+
+#progressBar {
+    width: 10rem;
+    height: 1rem;
+    border: 0.1rem solid whitesmoke;
+}
+
+#progressBarFull {
+    height: 1rem;
+    background-color: #082040;
+    width: 0%;
+}
+
+#league-questions {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+}
+
+#options-container {
+    border: 2px solid whitesmoke;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 5px;
+    height: 230px;
+    
+}
+
+.option-text {
+    margin: 10px 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-family: 'Lato', sans-serif;
+    height: 30px;
+    display: flex;
+    padding: 5px 5px;
+    align-items: center;
+
+}
