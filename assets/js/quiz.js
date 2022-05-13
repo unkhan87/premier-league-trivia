@@ -1,7 +1,7 @@
 
 const question = document.getElementById("league-questions");
 const options = Array.from(document.getElementsByClassName("option-text"));
-console.log(options);
+const nextQuestion = document.getElementById(next-btn);
 const progressText = document.getElementById("progress-text");
 
 /**declaring all the variables*/
@@ -53,3 +53,41 @@ let questions = [
         answer: 4
      },
 ]
+
+const CORRECT_BONUS = 10;
+const MAX_QUESTIONS = 5;
+
+function runGame() {
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    console.log(availableQuestions);
+};
+
+function checkAnswer() {
+
+}
+
+function calculateCorrectAnswer() {
+
+}
+
+function incrementScore() {
+
+}
+
+function incrementWrongAnswer() {
+
+}
+
+function displayNextQuestion() {
+
+}
+
+function questionTracker() {
+
+}
+
+function progressBox() {
+
+}
