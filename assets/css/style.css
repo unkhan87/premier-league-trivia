@@ -206,13 +206,24 @@ a {
 
 .option-text {
     margin: 10px 10px;
-    border: 1px solid black;
+    border: 1px solid rgba(86, 165, 235, 0.5);
+    background-color: #fff;
     border-radius: 20px;
     font-family: 'Lato', sans-serif;
     height: 30px;
     display: flex;
     padding: 5px 5px;
     align-items: center;
+    color: black;
+    font-weight: bold;
+}
+
+.option-text:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86,185, 235, 0.5);
+    transform: translate(-0.1rem);
+    transition: transform 150ms;
+    background-color: #56a5eb;
 }
 
 /*position and aligning bottom contril button*/
@@ -236,7 +247,6 @@ a {
     background-color: #56a5eb;
     border-radius: 20px;
     height: 40px;
-    cursor: pointer;
 }
 
 #next-btn {
@@ -253,8 +263,9 @@ a {
     margin-right: 10px;
 }
 
-.controls-btn {
+.controls-btn:hover {
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
     transform: translateY(-0.1rem);
-    transition: transform 150ms; 
+    transition: transform 150ms;
+    cursor: pointer;
 }
