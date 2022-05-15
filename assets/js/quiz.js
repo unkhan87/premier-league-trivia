@@ -1,14 +1,15 @@
 
 const question = document.getElementById("league-questions");
+/*To convert the options to array*/
 const options = Array.from(document.getElementsByClassName("option-text"));
 const progressText = document.getElementById("progress-text");
 
 /**declaring all the variables*/
-let currentQuestion = {}
+let currentQuestion = {};
 let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
-let availableQuestions = [];
+let remainingQuestions = [];
 let currentIndex = 0;
 
 let questions = [
@@ -60,23 +61,28 @@ const MAX_QUESTIONS = 5;
 function runGame() {
     questionCounter = 0;
     score = 0;
-    availableQuestions = [...questions];
-    questions = questions.sort(() => Math.random() - 0.5)
-    console.log(availableQuestions);
+    remainingQuestions = [...questions];
+    questions = questions.sort(() => Math.random() - 0.5);
+    console.log(remainingQuestions);
     displayNextQuestion();
-    displayOptions();
     };
 
 function displayNextQuestion() {
    question.innerHTML = questions[currentIndex].question;
- }
+   questionCounter++;
+   currentQuestion = remainingQuestions[questionIndex];
+
+   options.forEach((option) => {
+      const number = option.dataset.number;
+      option.innerText = currentQuestion['option' + number];
+  });
+  };
+
+  displayNextQuestion();
 
 function displayOptions() {
-   options[1].innerText = questions[currentIndex].option1;
-   options[2].innerText = questions[currentIndex].option2;
-   options[3].innerText = questions[currentIndex].option3;
-   options[4].innerText = questions[currentIndex].option4;
-}
+   
+};
 
 function checkAnswer() {
 
