@@ -5,7 +5,7 @@ const progressText = document.getElementById("progress-text");
 
 /**declaring all the variables*/
 let currentQuestion = {};
-let acceptingAnswers = true;
+let acceptingAnswers = false;
 let score = 0;
 let questionCounter = 0;
 let remainingQuestions = [];
@@ -60,25 +60,39 @@ function runGame() {
    questionCounter = 0;
    score = 0;
    remainingQuestions = [...questions];
-   questions = questions.sort(() => Math.random() - 0.5);
-   console.log(remainingQuestions);
    displayNextQuestion();
 };
 
 function displayNextQuestion() {
-   question.innerHTML = questions[currentIndex].question;
    questionCounter++;
+   questions = questions.sort(() => Math.random() - 0.5);
+   question.innerHTML = questions[currentIndex].question;
    currentQuestion = questions[currentIndex];
 
    /*display options*/
    options.forEach((option) => {
-      const number = option.dataset.number;
-      console.log(currentQuestion)
+      const number = option.dataset['number'];
       option.innerText = currentQuestion['option' + number];
    });
+
+   remainingQuestions.splice(questions, 1);
+
+   acceptingAnswers = true;
 };
 
-displayNextQuestion();
+/*choices the user have clicked*/
+options.forEach((option) => {
+   option.addEventListener("click", e=> {
+      if (!acceptingAnswers) return;
+
+      acceptingAnswers = false;
+      const selectedOption = e.target;
+      const selectedAnswer = selectedOption.dataset["number"];
+
+      displayNextQuestion();
+   });
+});
+
 
 function displayOptions() {
 
