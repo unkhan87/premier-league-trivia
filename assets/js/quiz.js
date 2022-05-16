@@ -64,6 +64,11 @@ function runGame() {
 };
 
 function displayNextQuestion() {
+   if (remainingQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+      //go to the end page
+      return window.location.assign('/end.html');
+  }
+
    questionCounter++;
    questions = questions.sort(() => Math.random() - 0.5);
    question.innerHTML = questions[currentIndex].question;
@@ -89,14 +94,19 @@ options.forEach((option) => {
       const selectedOption = e.target;
       const selectedAnswer = selectedOption.dataset["number"];
 
-      displayNextQuestion();
-   });
+      /*check answers if they are correct or incorrect*/
+
+      const checkAnswer = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+      
+      selectedOption.classList.add(checkAnswer);
+      
+      setTimeout( () => {
+         selectedOption.classList.remove(checkAnswer);
+         displayNextQuestion();
+      }, 1000);
+  });
 });
 
-
-function displayOptions() {
-
-};
 
 
 

@@ -271,3 +271,11 @@ a {
     transition: transform 150ms;
     cursor: pointer;
 }
+
+.correct {
+    background-color: #04BF20;
+}
+
+.incorrect {
+    background-color: #BF1F2C;
+}
