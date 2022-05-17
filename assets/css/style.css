@@ -170,6 +170,11 @@ a {
     justify-content: space-between;
 }
 
+.top-display-prefix {
+    font-weight: bold;
+    font-size: 20px;
+}
+
 .top-display-item {
     text-align: center;
     margin: 20px 20px;
@@ -179,6 +184,7 @@ a {
     width: 10rem;
     height: 1rem;
     border: 0.1rem solid whitesmoke;
+    margin-top: 10px;
 }
 
 #progressBarFull {
@@ -279,3 +285,6 @@ a {
 .incorrect {
     background-color: #BF1F2C;
 }
+
+
+

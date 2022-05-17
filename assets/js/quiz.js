@@ -1,7 +1,8 @@
 const question = document.getElementById("league-questions");
 /*To convert the options to array*/
 const options = Array.from(document.getElementsByClassName("option-text"));
-const progressText = document.getElementById("progress-text");
+const progressCounterText = document.getElementById("progress-text");
+const scoreText = document.getElementById("user-score");
 
 /**declaring all the variables*/
 let currentQuestion = {};
@@ -61,6 +62,7 @@ function runGame() {
    score = 0;
    remainingQuestions = [...questions];
    displayNextQuestion();
+   nextButton.classList.add("hide");
 };
 
 function displayNextQuestion() {
@@ -97,6 +99,10 @@ options.forEach((option) => {
       /*check answers if they are correct or incorrect*/
 
       const checkAnswer = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+
+      if (checkAnswer === "correct") {
+         incrementScore(CORRECT_BONUS);
+      }
       
       selectedOption.classList.add(checkAnswer);
       
@@ -107,9 +113,10 @@ options.forEach((option) => {
   });
 });
 
-
-
-
+incrementScore = num => {
+   score += num;
+   scoreText.innerText = score;
+};
 runGame()
 
 
