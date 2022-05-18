@@ -3,6 +3,7 @@ const question = document.getElementById("league-questions");
 const options = Array.from(document.getElementsByClassName("option-text"));
 const progressCounterText = document.getElementById("progress-text");
 const scoreText = document.getElementById("user-score");
+const questionTracker = document.getElementById("progress-text");
 
 /**declaring all the variables*/
 let currentQuestion = {};
@@ -72,6 +73,8 @@ function displayNextQuestion() {
   }
 
    questionCounter++;
+  /*implement question tracker using string concatenation*/
+   questionTracker.innerText = "Question:" + " " + questionCounter + "/" + MAX_QUESTIONS;
    questions = questions.sort(() => Math.random() - 0.5);
    question.innerHTML = questions[currentIndex].question;
    currentQuestion = questions[currentIndex];
@@ -133,10 +136,6 @@ function incrementWrongAnswer() {
 }
 
 
-
-function questionTracker() {
-
-}
 
 function progressBox() {
 
