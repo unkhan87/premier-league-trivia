@@ -108,7 +108,6 @@ options.forEach((option) => {
       }
       
       selectedOption.classList.add(checkAnswer);
-      
       setTimeout( () => {
          selectedOption.classList.remove(checkAnswer);
          displayNextQuestion();
@@ -123,17 +122,7 @@ incrementScore = num => {
 runGame()
 
 
-function calculateCorrectAnswer() {
 
-}
-
-function incrementScore() {
-
-}
-
-function incrementWrongAnswer() {
-
-}
 
 
 
