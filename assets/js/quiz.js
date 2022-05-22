@@ -5,6 +5,8 @@ const progressCounterText = document.getElementById("progress-text");
 const scoreText = document.getElementById("user-score");
 const progressBar = document.getElementById("progressBarFull");
 const questionTracker = document.getElementById("progress-text");
+const userFinalScore = document.getElementById("final-score");
+const userScore = localStorage.getItem('userScore');
 
 /**declaring all the variables*/
 let currentQuestion = {};
@@ -69,6 +71,8 @@ function runGame() {
 
 function displayNextQuestion() {
    if (remainingQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
+      //store user score in the local storage
+      localStorage.setItem("userScore", score);
       //go to the end page
       return window.location.assign('/end.html');
   }
@@ -122,6 +126,9 @@ incrementScore = num => {
    score += num;
    scoreText.innerText = score;
 };
+
+//userFinalScore.innerText = userScore;
+
 runGame()
 
 
