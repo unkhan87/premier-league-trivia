@@ -9,23 +9,27 @@
 </head>
 <body>
     <div id="main-background">
+        <!--container hold the instructions and main control buttons-->
         <div id="box-container">
-            <h1 id="main-heading">Premier League Trivia</h1>
-            <h3>How well do you know the premier league?</h3>
-            <button class="main-buttons" id="instructions-btn" onclick="openInstructions()">Instructions</button>
+            <h1 aria-label="premier league quiz" id="main-heading">Premier League Trivia</h1>
+            <h3 aria-label="text your premier league knowldge">How well do you know the premier league?</h3>
+            <!--instructions box button and box that will hold instructions-->
+            <button aria-label="check instrcutions for the quiz (opens in a pop up box)" class="main-buttons" id="instructions-btn" onclick="openInstructions()">Instructions</button>
             <div class="instructions-box" id="quiz-instructions">
                 <h2>Instructions</h2>
+                <!--list of instructions-->
                 <ul>
-                    <li>You will have 15secs for each question.</li>
-                    <li>Once you select your answer it can be changed.</li>
-                    <li>You can't select any option once the time go off.</li>
+                    <li>There is no time limit set for this quiz.</li>
+                    <li>Once you select your answer it can not be changed.</li>
                     <li>You can't exit from the quiz while you're playing.</li>
                     <li>You will get the points on the basis of correct answer.</li>
+                    <li>You will be awarded 10 points for each correct answer.</li>
                 </ul>
-                <button type="button" onclick="closeInstructions()">OK</button>
+                <button aria-label="close the instructions box" type="button" onclick="closeInstructions()">OK</button>
             </div>
+            <!--start quiz button-->
             <a href="quiz.html">
-            <button class="main-buttons" id="start-button">Start Quiz</button>
+            <button aria-label="click to start the quiz" class="main-buttons" id="start-button">Start Quiz</button>
             </a>
         </div>
 

@@ -1,3 +1,4 @@
+/*import fonts from google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
 body {
@@ -9,6 +10,7 @@ body {
     padding: 0;
 }
 
+/*styling and position for the main background page*/
 #main-background {
     height: 100vh;
     background-image: url("../images/main-background 2.jpg");
@@ -169,6 +171,7 @@ a {
     margin: 20px 10px;
 }
 
+/*position top display items with the question container box*/
 #top-display {
     display: flex;
     justify-content: space-between;
@@ -247,7 +250,7 @@ a {
     background-color: #56a5eb;
 }
 
-/*position and aligning bottom contril button*/
+/*position and aligning bottom control button*/
 .controls {
     height: 80px;
     position: relative;
@@ -339,9 +342,6 @@ a {
     margin-bottom: 30px;
 }
 
-.hide{
-    display: none;
-}
 
 
 

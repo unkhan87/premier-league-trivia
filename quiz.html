@@ -17,12 +17,12 @@
                 <h1 class="top-display-prefix" id="score-text">
                     Score
                 </h1>
-                <h1 id="user-score" class="score-number">
+                <h1 aria-label="your score" id="user-score" class="score-number">
                     0
                 </h1>
             </div>
             <div class="top-display-item">
-                <h1 id="progress-text" class="top-display-prefix">
+                <h1 aria-label="shows question number" id="progress-text" class="top-display-prefix">
                     Question:
                 </h1>
                 <div id="progressBar">
@@ -30,18 +30,19 @@
                 </div>
             </div>
         </div>
+            <!--The below block of code contains questions with options available to the user-->
             <p id="league-questions" class="questions">Question:</p>
                 <div id="options-container" class="options-box">
-                    <div class="option-text" data-number="1">
+                    <div aria-label="select option b" class="option-text" data-number="1">
                         <p>Option A</p>
                     </div>
-                    <div class="option-text" data-number="2">
+                    <div aria-label="select option b" class="option-text" data-number="2">
                         <p>Option B</p>
                     </div>
-                    <div class="option-text" data-number="3">
+                    <div aria-label="select option c" class="option-text" data-number="3">
                         <p>Option C</p>
                     </div>
-                    <div class="option-text" data-number="4">
+                    <div aria-label="select option d" class="option-text" data-number="4">
                         <p>Option D</p>
                     </div>
                 </div>

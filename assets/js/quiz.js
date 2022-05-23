@@ -1,5 +1,5 @@
 const question = document.getElementById("league-questions");
-/*To convert the options to array*/
+//To convert the options to array
 const options = Array.from(document.getElementsByClassName("option-text"));
 const progressCounterText = document.getElementById("progress-text");
 const scoreText = document.getElementById("user-score");
@@ -8,7 +8,7 @@ const questionTracker = document.getElementById("progress-text");
 const userFinalScore = document.getElementById("final-score");
 const userScore = localStorage.getItem('userScore');
 
-/**declaring all the variables*/
+//declaring all the variables
 let currentQuestion = {};
 let acceptingAnswers = false;
 let score = 0;
@@ -61,19 +61,19 @@ let questions = [{
 const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 5;
 
+//
 function runGame() {
    questionCounter = 0;
    score = 0;
    remainingQuestions = [...questions];
    displayNextQuestion();
-   nextButton.classList.add("hide");
 };
 
 function displayNextQuestion() {
    if (remainingQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
-      //store user score in the local storage
+      //store user score in the local storage applied this with the help of tutorials from W3school
       localStorage.setItem("userScore", score);
-      //go to the end page
+      //go to the end page. This was implemented after following instuctions from MSDN web docs
       return window.location.assign('/end.html');
   }
 
@@ -82,11 +82,14 @@ function displayNextQuestion() {
    questionTracker.innerText = "Question:" + " " + questionCounter + "/" + MAX_QUESTIONS;
   //for progress bar
    progressBar.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+   //randomize questions
    questions = questions.sort(() => Math.random() - 0.5);
    question.innerHTML = questions[currentIndex].question;
    currentQuestion = questions[currentIndex];
 
-   /*display options*/
+   /**
+    * display options
+   */
    options.forEach((option) => {
       const number = option.dataset['number'];
       option.innerText = currentQuestion['option' + number];
@@ -97,7 +100,10 @@ function displayNextQuestion() {
    acceptingAnswers = true;
 };
 
-/*choices the user have clicked*/
+/**
+ * checks if the answer is correct or incorrect and if correct awards bonus points to the user.
+ * once selected display next question.
+ */
 options.forEach((option) => {
    option.addEventListener("click", e=> {
       if (!acceptingAnswers) return;
@@ -122,6 +128,7 @@ options.forEach((option) => {
   });
 });
 
+//increment score for the user if the answer is correct
 incrementScore = num => {
    score += num;
    scoreText.innerText = score;
