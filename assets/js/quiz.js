@@ -45,7 +45,7 @@ let questions = [{
       option1: "Tottenham Hotspur",
       option2: "Leicester City",
       option3: "Everton",
-      option4: "Southampton F.C",
+      option4: "Southampton F.C.",
       answer: 2,
    },
    {

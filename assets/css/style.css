@@ -160,11 +160,12 @@ a {
     position: relative;
     width: 800px;
     height: 500px;
-    background: rgba(0,0,0,.3);
+    background: rgba(0,0,0,.7);
     font-family: 'Lato', sans-serif;
     border-radius: 20px;
     color: whitesmoke;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
 }
 
 #quiz-timer {
@@ -302,7 +303,7 @@ a {
 /*styling and positiong for quiz end area*/
 
 #end-area {
-    background: #2675A6;
+    background: url(../images/quiz-summary.jpg);
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -316,7 +317,7 @@ a {
     display: flex;
     width: 800px;
     height: 400px;
-    background: rgba(0,0,0,.3);
+    background: rgba(0,0,0,.9);
     font-family: 'Lato', sans-serif;
     border-radius: 20px;
     color: whitesmoke;
