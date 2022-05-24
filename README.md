@@ -27,7 +27,9 @@ During the lockdown quizes became popular where the friends and family started p
 
 ### Colour Scheme
 
-* As the website pages have the background image, I wanted to keep the coulour scheme balanced on the website so as to not overhelm users. In order to avoid text overlayiong on the background I have created shadow boxes that holds the important aspects of the website like questions, score area and instructions box. Blue, white and black colours are generally used in the English Premier League logo, so I have designed my initial colour pallete keeping this in mind. 
+* As the website pages have the background image, I wanted to keep the coulour scheme balanced on the website so as to not overhelm users. In order to avoid text overlayiong on the background I have created shadow boxes that holds the important aspects of the website like questions, score area and instructions box. Blue, white and black colours are generally used in the English Premier League logo, so I have designed my initial colour pallete keeping this in mind.
+
+* For the correct and incorrect choices I went to for the tradiotional green color for the correct choices and red color for the incorrect choice.
 
 ### Typography
 When choosing the fonts for my website my aim was to keep it simple. On the website there are two fonts getting used that I have imported from Google fonts.
@@ -37,4 +39,18 @@ When choosing the fonts for my website my aim was to keep it simple. On the webs
 
 ## Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+The website have been designed to be used across all divce sizes and have been divided into three main sections.
+
+### Home Page
+* This page provides user with a brief introduction about the quiz a background image of the English Premier Logo with two call to action buttons (Instructions and Home).
+* The buttons also have a hover effect in order to provide feedback to the user for a better user experience.
+[Home Section](assets/readme-files/home-section.png)
+
+#### Main Buttons
+* The instructions buttons open the rules of the quiz pop up box. And then select OK button within the instructions box to come out of it and back to the home page.
+[Instructions Box](assets/readme-files/instructions-box.png)
+
+* The start quiz button work as a link to the game section.
+
+### Quiz Page
+The quiz page contains quiz area and the background image.
