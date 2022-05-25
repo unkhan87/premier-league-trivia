@@ -1,4 +1,4 @@
-#English Premier League Quiz
+# English Premier League Quiz
 
 Test your Premier League Knowledge with this quiz!
 
@@ -44,13 +44,118 @@ The website have been designed to be used across all divce sizes and have been d
 ### Home Page
 * This page provides user with a brief introduction about the quiz a background image of the English Premier Logo with two call to action buttons (Instructions and Home).
 * The buttons also have a hover effect in order to provide feedback to the user for a better user experience.
-[Home Section](assets/readme-files/home-section.png)
+
+![Home Section](assets/readme-files/home-section.png)
 
 #### Main Buttons
 * The instructions buttons open the rules of the quiz pop up box. And then select OK button within the instructions box to come out of it and back to the home page.
-[Instructions Box](assets/readme-files/instructions-box.png)
+
+![Instructions Box](assets/readme-files/instructions-box.png)
 
 * The start quiz button work as a link to the game section.
 
 ### Quiz Page
-The quiz page contains quiz area and the background image.
+* The quiz page contains quiz area and the background image.
+
+![Game section](assets/readme-files/quiz-section.png)
+
+* **Score Area**
+    - Keep track of the points obtained by the player and displays the current score to the player.
+
+* **Question Tracker**
+    - Display the question number to the user and let them know how many questions are left to complete the quiz.
+
+* **Progress Tracker**
+    - Visual display for the user to bring more interactivity.
+
+* **Question Display Area**
+    - Display questions for the user.
+
+* **Option Section**
+    - Display choices for the user to select from. The choices have a got a hover effect that changes the color for option they are selecting and once selected the option will dynamically change its colour to red(incorrect) or green(correct).
+
+### Summary Page
+
+* The summary page displays the final score and update the message for the user depending on whats their score is.
+* The page also contains two buttons.
+    - Reset Quiz Button: This button close the quiz summary page and restart the game again for the user.
+    - End Quiz Button: This button takes you back top the main page of the quiz.
+
+![Summary Page](assets/readme-files/summary-page.png)
+
+## Technologies Used
+
+### Languages Used
+* [HTML5](https://en.wikipedia.org/wiki/HTML5)
+* [CSS3](https://en.wikipedia.org/wiki/CSS)
+* [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+
+### Frameworks, Libraries and Programs Used
+
+* [Google Fonts](https://fonts.google.com/)
+    - Google Fonts was used to import the fonts Oswald and Lato into the style.css file. These fonts were used throughout the site.
+
+* [GitPod](https://gitpod.io/)
+     - GitPod was used for writing code, committing, and then pushing to GitHub.
+
+* [GitHub](https://github.com/)
+     - GitHub was used to store the project after pushing.
+
+* [Chrome DevTools](https://developer.chrome.com/docs/devtools/)
+    - Chrome DevTools was used during development process for code review and to test responsiveness.
+
+* [W3C Markup Validator](https://validator.w3.org/)
+    - W3C Markup Validator was used to validate the HTML code.
+
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+    - W3C CSS Validator was used to validate the CSS code.
+
+* [JSHint](https://jshint.com/) 
+    - The JSHints JavaScript Code Quality Tool was used to validate the site's JavaScript code.
+
+* [Favicon.cc](https://www.favicon.cc/) 
+    - Favicon.cc was used to create the site favicon.
+
+## Testing
+
+### Testing User Stories
+
+* As a player, I want the game's website to be easy to navigate.
+
+    - The website offers an intuitive structure for the player to find easily the information or section they are looking for.
+
+* As a player, I want the game to be fun and engaging.
+
+    - Premier league bakground have been displayed on the main page of the website.
+
+    - The site's color design has been inspired by the colors used by the English Premier League.
+    
+    - The game area display the the question tracker, score area, progress bar, questions and 4 choices.
+
+    - The score is being tracked and displayed on the top of the game section.
+
+    - Question tracker and progress bar helps the user to track their progress.
+
+    - The choices section in the question area have also got a hover effect that changes color in order to help the user.
+
+* As a player, I want to have easy access to the game rules.
+
+    - A quiz rules option have been displayed on the home page of the website.
+
+    - The instructions box popup directly on the home page allowing them to view the instructions and would not be re-directed to a different page. 
+
+* As a player, I want the game controls to be easy to access during the game.
+
+    - All the game buttons are being provided on the bottom of the game section for easy access.
+
+    - Through out the website the buttons have got a hover effect that helps the users to see what button they are about to click.
+
+* As a player, I want to track my progress and see my score during and after the game.
+
+    - Score is always available on the top of the game section.
+
+    - Question tracker and progress bar are always available on top of the question in order for the user to keep track.
+
+    - Total score with a dynamic message gets displayed on the summary page of the quiz.
+
+
