@@ -5,8 +5,7 @@ const progressCounterText = document.getElementById("progress-text");
 const scoreText = document.getElementById("user-score");
 const progressBar = document.getElementById("progressBarFull");
 const questionTracker = document.getElementById("progress-text");
-//const userFinalScore = document.getElementById("final-score");
-//const userScore = localStorage.getItem('userScore');
+
 
 //declaring all the variables
 let currentQuestion = {};

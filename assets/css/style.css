@@ -343,8 +343,13 @@ a {
     margin-bottom: 30px;
 }
 
-
-
+/*for the screen sizes 390px or below*/
+@media screen and (max-width: 390px) {
+    #box-container {
+        height: 700px;
+        width: 95%;
+    }
+}
 
 
 
