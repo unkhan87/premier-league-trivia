@@ -116,7 +116,7 @@ options.forEach((option) => {
       const checkAnswer = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
       if (checkAnswer === "correct") {
-         incrementScore(CORRECT_BONUS);
+       incrementScore(CORRECT_BONUS);
       }
       
       selectedOption.classList.add(checkAnswer);
@@ -128,7 +128,7 @@ options.forEach((option) => {
 });
 
 //increment score for the user if the answer is correct
-incrementScore = num => {
+let incrementScore = num => {
    score += num;
    scoreText.innerText = score;
 };
