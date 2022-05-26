@@ -73,7 +73,7 @@ function displayNextQuestion() {
       //store user score in the local storage applied this with the help of tutorials from W3school
       localStorage.setItem("userScore", score);
       //go to the end page. This was implemented after following instuctions from MSDN web docs
-      return window.location.assign('/end.html');
+      return window.location.assign('end.html');
   }
 
    questionCounter++;
