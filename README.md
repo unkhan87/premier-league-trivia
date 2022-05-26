@@ -215,6 +215,15 @@ As javascript was a brand new coding language for me initially I struggle to put
 
     * [MDN Web Docs](https://developer.mozilla.org/en-US/) - I was strugling how to show user end score on the end page until I found a feature called 'localStorage' on this website.
 
+### Code
+
+As part of the learning process I relied on different online tutorials for CSS and Javascript. Some of one I followed for the completion of this are as follows
+
+* Webdev simplified
+* https://www.youtube.com/watch?v=zPcvAwp71uA&t=476s
+* For displaying the questions - https://www.sitepoint.com/simple-javascript-quiz/
+* For question tracker and progress tracker - https://www.youtube.com/watch?v=f4fB9Xg2JEY&t=2s
+
 ### Image Resources
 
 * Main background image - https://www.google.com/url?sa=i&url=https%3A%2F%2Fawfulannouncing.com%2F2016%2Fthe-premier-league-is-dumping-their-lion-logo.html&psig=AOvVaw1sl3x7pSXVgnIhrSDY6YfK&ust=1653635097507000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMi-6v3M_PcCFQAAAAAdAAAAABAI
