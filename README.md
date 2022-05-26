@@ -6,6 +6,7 @@ Premier League is the most competitive and most-watched league in the world, bro
 
 During the lockdown quizes became popular where the friends and family started playing quiz through video conferencing like skype and many companies started playing quiz as part of the team building exercise. This gave me an idea to develop an interactive quiz application for the Premier league where users can play on their own to improve their premier league knowledge. 
 
+#### [View the deployed website!](https://unkhan87.github.io/premier-league-trivia/)
 
 ## User Experience
 
@@ -113,9 +114,6 @@ The website have been designed to be used across all divce sizes and have been d
 * [JSHint](https://jshint.com/) 
     - The JSHints JavaScript Code Quality Tool was used to validate the site's JavaScript code.
 
-* [Favicon.cc](https://www.favicon.cc/) 
-    - Favicon.cc was used to create the site favicon.
-
 ## Testing
 
 ### Testing User Stories
@@ -158,4 +156,73 @@ The website have been designed to be used across all divce sizes and have been d
 
     - Total score with a dynamic message gets displayed on the summary page of the quiz.
 
+### Browser Testing
 
+Other than Google Chrome I have tested this application on Microsoft Edge and Mozilla Firefox.
+
+### Performance Testing
+
+[Lighthouse](https://developers.google.com/web/tools/lighthouse/) tool was used to check the performance of my application. Please see the results below.
+
+![Lighthouse Score](/assets/readme-files/light-house-result.png)
+
+### Code Validation
+
+I have used three online resources to validate the application's code. 
+
+* [W3C HTML Validator](https://validator.w3.org/) to test HTML code.
+* [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) to validate CSS code.
+* [JSHint Validator](https://jshint.com) to validate JS code.
+
+Please see the results below.
+
+---
+![HTML Validation](/assets/readme-files/w3c-html-validator.png)
+
+---
+![CSS Validation](/assets/readme-files/css-validator.png)
+
+---
+![JS Validation](/assets/readme-files/js-validation.png)
+
+## Deployment
+
+* This website was developed using [GitPod](https://www.gitpod.io/), which was then committed and pushed to GitHub using the GitPod terminal.
+
+### GitHub Pages
+
+* Here are the steps to deploy this website to GitHub Pages from its GitHub repository:
+
+    1. Log in to GitHub and locate the [GitHub Repository](https://github.com/).
+
+    2. At the top of the Repository, locate the Settings button on the menu.
+
+    3. Scroll down the Settings page until you locate the Pages section.
+
+    4. Under Source, click the dropdown called None and select Master Branch.
+
+    5. The page will refresh automatically and generate a link to your website.
+
+## Credits
+
+To complete this project I used Code Institute student template: [gitpod full template](https://github.com/Code-Institute-Org/gitpod-full-template)
+
+### Learning Resources
+
+As javascript was a brand new coding language for me initially I struggle to put the initial project structure in place and have to get ideas and learn new feature in javascript that I can adapt in my project.
+
+    * [w3schools.com](https://www.w3schools.com) - I used W3Schools to learn arrow functions how to manipulate DOM and forEach method from this reource.
+
+    * [MDN Web Docs](https://developer.mozilla.org/en-US/) - I was strugling how to show user end score on the end page until I found a feature called 'localStorage' on this website.
+
+### Image Resources
+
+* Main background image - https://www.google.com/url?sa=i&url=https%3A%2F%2Fawfulannouncing.com%2F2016%2Fthe-premier-league-is-dumping-their-lion-logo.html&psig=AOvVaw1sl3x7pSXVgnIhrSDY6YfK&ust=1653635097507000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMi-6v3M_PcCFQAAAAAdAAAAABAI
+
+* Summary Page Background Image - I would like to thank Joshua Hoehne for the image. https://unsplash.com/photos/Rrcyop6jvDA.
+
+* Quiz Page Background Image - I would like to thank Mathias Herheim for the image - https://unsplash.com/photos/mzwMBFUOECQ.
+
+### Help and Guidance
+
+* I would like to thank my mentor (Marcel) for his guidance and invaluable input in completing my project.
